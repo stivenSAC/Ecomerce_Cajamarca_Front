@@ -4,12 +4,12 @@
       <div class="footer-content">
         <div class="footer-section">
           <h3>Mujer Raíz</h3>
-          <p>Plataforma virtual que conecta a mujeres emprendedoras de Cajamarca con el mundo, promoviendo sus productos artesanales y únicos.</p>
+          <p>Plataforma virtual que conecta a mujeres emprendedoras de Cajamarca, Tolima con el mundo, promoviendo sus productos artesanales y únicos.</p>
         </div>
         
         <div class="footer-section">
           <h4>Nuestra Misión</h4>
-          <p>Empoderar a las mujeres emprendedoras de Cajamarca brindándoles un espacio digital para mostrar y vender sus creaciones.</p>
+          <p>Empoderar a las mujeres emprendedoras de Cajamarca, Tolima brindándoles un espacio digital para mostrar y vender sus creaciones.</p>
         </div>
         
         <div class="footer-section">
@@ -21,7 +21,7 @@
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2024 Mujer Raíz. Plataforma virtual de apoyo a emprendedoras cajamarquinas.</p>
+        <p>&copy; 2024 Mujer Raíz. Plataforma virtual de apoyo a emprendedoras de Cajamarca, Tolima.</p>
       </div>
     </div>
   </footer>
