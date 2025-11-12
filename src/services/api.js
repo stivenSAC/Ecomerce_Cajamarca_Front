@@ -62,6 +62,7 @@ export const productsAPI = {
   getAll: () => api.get('/products'),
   getById: (id) => api.get(`/products/${id}`),
   search: (nombre) => api.get(`/products/search?nombre=${nombre}`),
+  test: () => api.post('/products/test'),
   create: (product) => api.post('/products', product),
   update: (id, product) => api.put(`/products/${id}`, product),
   delete: (id) => api.delete(`/products/${id}`),
@@ -73,6 +74,23 @@ export const userAPI = {
   updateProfile: (userData) => api.put('/users/profile', userData),
   updatePartialProfile: (userData) => api.patch('/users/profile', userData),
   deleteAccount: () => api.delete('/users/profile')
+}
+
+export const imagesAPI = {
+  upload: (formData) => {
+    const uploadApi = axios.create({
+      baseURL: API_BASE_URL,
+      headers: {
+        'Content-Type': 'multipart/form-data'
+      }
+    })
+    const token = localStorage.getItem('token')
+    if (token) {
+      uploadApi.defaults.headers.Authorization = `Bearer ${token}`
+    }
+    return uploadApi.post('/images/upload', formData)
+  },
+  compress: (base64Data) => api.post('/images/compress', { image: base64Data })
 }
 
 export default api
